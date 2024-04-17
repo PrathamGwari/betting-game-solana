@@ -33,7 +33,8 @@ app.post('/api/transaction', (req, res) => {
 });
 
 app.get('/api/transactionResult', (req, res) => {
-    res.json({ transactionResult });
+    console.log('transaction result', transactionResult)
+    return res.status(200).json({ transactionResult });
 });
 
 
